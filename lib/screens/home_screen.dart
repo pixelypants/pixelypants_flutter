@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bootstrap/flutter_bootstrap.dart';
 import '../widgets/pixely_topic_card.dart';
 import 'package:pixelypants_flutter/themes/pixely_theme.dart';
 
@@ -24,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Container(
       height: 230,
-      // padding: EdgeInsets.all(2),
       color: PixelyTheme.gridBackground,
       child: ListView(
         scrollDirection: Axis.horizontal,
@@ -38,7 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
               subTitleText: '+42 articles',
             ),
           ),
-          // Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: PixelyTopicCard(
@@ -47,7 +44,6 @@ class _HomeScreenState extends State<HomeScreen> {
               subTitleText: '+61 articles',
             ),
           ),
-          // Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: PixelyTopicCard(

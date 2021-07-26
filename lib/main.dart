@@ -46,7 +46,6 @@ class _PixelyAppState extends State<PixelyApp> {
                 },
               ),
             ],
-            // borderRadius: BorderRadius.all(Radius.circular(5.0)),
           ),
           body: PixelyPageView()),
     );
@@ -58,8 +57,6 @@ class PixelyPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     final PageController controller = PageController(initialPage: 0);
     return PageView(
-      /// [PageView.scrollDirection] defaults to [Axis.horizontal].
-      /// Use [Axis.vertical] to scroll vertically.
       scrollDirection: Axis.horizontal,
       controller: controller,
       children: const <Widget>[

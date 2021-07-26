@@ -6,8 +6,6 @@ class PixelyTheme with ChangeNotifier {
   static bool _isDarkTheme = false;
   ThemeMode get currentTheme => _isDarkTheme ? ThemeMode.dark : ThemeMode.light;
 
-  // 191A32
-
   static Color gradientColorA = Colors.teal.shade600;
   static Color gradientColorB = Colors.purple;
   static Color iconColor = Colors.teal;
@@ -19,8 +17,6 @@ class PixelyTheme with ChangeNotifier {
 
   void toggleTheme() {
     _isDarkTheme = !_isDarkTheme;
-
-    // print(">>>> $_isDarkTheme");
 
     gridBackground = _isDarkTheme ? Colors.white24 : Colors.transparent;
     gradientColorA = _isDarkTheme ? Colors.purple : Colors.teal.shade600;
